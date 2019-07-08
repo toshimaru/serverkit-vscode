@@ -1,8 +1,4 @@
-require "serverkit/vscode/version"
+# frozen_string_literal: true
 
-module Serverkit
-  module Vscode
-    class Error < StandardError; end
-    # Your code goes here...
-  end
-end
+require 'serverkit/vscode/version'
+require 'serverkit/resources/vscode_package'
