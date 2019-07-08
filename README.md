@@ -1,40 +1,36 @@
 [![Build Status](https://travis-ci.org/toshimaru/serverkit-vscode.svg?branch=master)](https://travis-ci.org/toshimaru/serverkit-vscode)
 
-# Serverkit::Vscode
+# serverkit-vscode
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/serverkit/vscode`. To experiment with that code, run `bin/console` for an interactive prompt.
+[Serverkit](https://github.com/serverkit/serverkit) plug-in for [VSCode](https://code.visualstudio.com/).
 
-TODO: Delete this and the text above, and describe your gem
+## Install
 
-## Installation
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'serverkit-vscode'
+```rb
+# Gemfile
+gem "serverkit-vscode"
 ```
+## Resource
 
-And then execute:
+### vscode_package
 
-    $ bundle
+Install specified VSCode package.
 
-Or install it yourself as:
+#### Attributes
 
-    $ gem install serverkit-vscode
+- `name` - package name (required)
+- `version` - package version (optional)
 
-## Usage
+#### Example
 
-TODO: Write usage instructions here
-
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/serverkit-vscode. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+```yaml
+resources:
+  - type: vscode_package
+    name: GitHub.vscode-pull-request-github
+  - type: vscode_package
+    name: ms-vscode.Go
+    version: 0.11.0
+```
 
 ## License
 
@@ -42,4 +38,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the Serverkit::Vscode project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/serverkit-vscode/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the Serverkit::Vscode project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/toshimaru/serverkit-vscode/blob/master/CODE_OF_CONDUCT.md).
