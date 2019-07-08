@@ -10,7 +10,7 @@ module Serverkit
 
       # @note Override
       def apply
-        run_command("code -install-extension #{name_with_version}")
+        run_command("code --install-extension #{name_with_version}")
       end
 
       # @note Override
