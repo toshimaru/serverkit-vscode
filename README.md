@@ -1,4 +1,5 @@
-[![Build Status](https://travis-ci.org/toshimaru/serverkit-vscode.svg?branch=master)](https://travis-ci.org/toshimaru/serverkit-vscode)
+[![Test](https://github.com/toshimaru/serverkit-vscode/actions/workflows/test.yml/badge.svg)](https://github.com/toshimaru/serverkit-vscode/actions/workflows/test.yml)
+[![Gem Version](https://badge.fury.io/rb/serverkit-vscode.svg)](https://badge.fury.io/rb/serverkit-vscode)
 
 # serverkit-vscode
 
@@ -28,8 +29,8 @@ resources:
   - type: vscode_package
     name: GitHub.vscode-pull-request-github
   - type: vscode_package
-    name: ms-vscode.Go
-    version: 0.11.0
+    name: github.copilot
+    version: 1.156.0
 ```
 
 ## License
